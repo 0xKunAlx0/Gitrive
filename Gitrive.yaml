@@ -11,13 +11,13 @@ info:
 requests:
   - method: GET
     path:
-      - "/.git/"
-      - "/.git/HEAD"
-      - "/.git/config"
-      - "/.git/index"
-      - "/.git/logs/HEAD"
-      - "/.git/refs/heads/master"
-      - "/.git/refs/heads/main"
+      - "{{BaseUrl}}/.git/"
+      - "{{BaseUrl}}/.git/HEAD"
+      - "{{BaseUrl}}/.git/config"
+      - "{{BaseUrl}}/.git/index"
+      - "{{BaseUrl}}/.git/logs/HEAD"
+      - "{{BaseUrl}}/.git/refs/heads/master"
+      - "{{BaseUrl}}/.git/refs/heads/main"
 
     matchers:
       - type: regex
